@@ -103,5 +103,9 @@ main {
         border-radius: 1.2rem;
         font-weight: 600;
         cursor: pointer;
+
+        &:hover {
+            background: var(--color-brand-hover);
+        }
     }
 }
