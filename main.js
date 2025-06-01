@@ -25,7 +25,7 @@ function showItemsList() {
         <div>
             <input type="checkbox" name="list" id="item-${index}">
 
-            <div class="custom-checkbox">
+            <div class="custom-checkbox" onclick="checkItem('${item.name}')">
                 <img src="./assets-20250531T214537Z-1-001/assets/checked.svg" alt="checked">
             </div>
             <label for="item-${index}">${item.name}</label>
@@ -56,4 +56,10 @@ function removeItem(itemName) {
 
 
     showItemsList()
+}
+
+function checkItem(itemName) {
+    console.log(itemName)
+
+
 }
