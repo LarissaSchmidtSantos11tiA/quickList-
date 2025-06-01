@@ -28,7 +28,7 @@ function showItemsList() {
             <div class="custom-checkbox" onclick="checkItem('${item.name}')">
                 <img src="./assets-20250531T214537Z-1-001/assets/checked.svg" alt="checked">
             </div>
-            <label for="item-${index}">${item.name}</label>
+            <label for="item-${index}" onclick="checkItem('${item.name}')">${item.name}</label>
         </div>
 
         <button onclick="removeItem('${item.name}')">
@@ -59,7 +59,19 @@ function removeItem(itemName) {
 }
 
 function checkItem(itemName) {
-    console.log(itemName)
+    const item = items.find((item) => item.name === itemName)
+
+    if(item.checked === true) {
+        item.checked = false
+    } else {
+        item.checked = true
+
+    }
+
+    console.log(items)
+
+    showItemsList()
+
 
 
 }
