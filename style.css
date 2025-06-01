@@ -106,6 +106,13 @@ main {
 
         &:hover {
             background: var(--color-brand-hover);
+            
         }
+    }
+}
+
+.list {
+    .item {
+        background: var(--background-secondary);
     }
 }
