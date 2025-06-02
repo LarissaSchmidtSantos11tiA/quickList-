@@ -139,7 +139,7 @@ main {
         .custom-checkbox {
             width: 1.6rem;
             height: 1.6rem;
-            border: 1px solid var(--background-primary);
+            border: 1px solid var(--border-primary);
             border-radius: .6rem;
         }
 
